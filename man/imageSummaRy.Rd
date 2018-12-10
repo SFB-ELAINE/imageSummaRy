@@ -7,12 +7,16 @@
 \alias{ImageSummary}
 \title{imageSummaRy}
 \usage{
-imageSummaRy(input_file, color = "none", threshold = 0)
+imageSummaRy(input_file = NULL, input_directory = NULL,
+  output_directory = NULL, threshold = 0)
 }
 \arguments{
 \item{input_file}{A character (image file)}
 
-\item{color}{A character (color of the pixels under consideration)}
+\item{input_directory}{A character (directory of all images)}
+
+\item{output_directory}{A character (directory where the resulting images
+are to be saved)}
 
 \item{threshold}{A number (minimum intensity for counting pixles)}
 }
@@ -20,7 +24,8 @@ imageSummaRy(input_file, color = "none", threshold = 0)
 Main function for image summary
 }
 \details{
-Input should be tif-format.
+Input should be tif-format. The output is the summary in the
+data frame format.
 }
 \examples{
 \dontrun{
